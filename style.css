@@ -195,7 +195,7 @@ section{
 }
 
 .section2 .brand-logos_container{
-  padding-bottom: 8.5vw;
+  padding-bottom: 3.5vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -208,6 +208,7 @@ section{
 
 .section3{
     height: 100vh;
+    padding: 2.5vw 0;
 }
 
 .section3 .service{
@@ -222,7 +223,6 @@ section{
     background-color: #b9ff66;
     padding: 2.5px 5px;
     font-weight: 500;
-    white-space: 0.05rem;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -234,3 +234,89 @@ section{
     width: 55%;
     font-size: 1.3rem;
 }
+
+.section3 .cardContainer{
+    height: inherit;
+    display: grid;
+    justify-content: space-between;
+    align-content: space-between;
+    grid-template-columns: 47% 47%;
+    grid-template-rows: 47% 47%;
+    padding: 4rem 0;
+}
+
+.section3 .cardContainer .card{
+    width: 100%;
+    height: 100%;
+    padding: 3rem;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid #222222;
+    border-radius: 3rem;
+    -webkit-border-radius: 3rem;
+    -moz-border-radius: 3rem;
+    -ms-border-radius: 3rem;
+    -o-border-radius: 3rem;
+}
+
+.section3 .cardContainer .card:nth-child(1), .section3 .cardContainer .card:nth-child(4){
+    box-shadow: 0px 0.5rem 0px #222222;
+    height: calc(100% - 0.5rem);
+}
+
+.section3 .cardContainer .card:nth-child(2), .section3 .cardContainer .card:nth-child(3){
+    background-color: #222222;
+    color: white;
+}
+
+
+.section3 .card .cardLeft{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.section3 .card .cardLeft h2{
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.section3 .card .cardLeft h2 > span{
+    background-color: #b9ff66;
+    padding: 2.5px 5px;
+    font-weight: 500;
+    word-spacing: 0.05rem;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.section3 .card .cardLeft h4{
+    font-size: 1.1rem;
+    font-weight: 400;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.section3 .card .cardLeft h4 > i{
+    font-size: 2.2rem;
+    font-weight: 300;
+    rotate: 15deg;
+    padding: 0.1rem;
+    background-color: #222222;
+    color: #b9ff66;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.section3 .card .cardRight{
+    width: 50%;
+    padding: 1rem;
+}
+.section3 .card .cardRight img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
