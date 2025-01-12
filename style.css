@@ -26,11 +26,14 @@ p {
     font-size: 20px;
 }
 
-.section1 {
+section{
     background-color: white;
-    width: 90%;
-    height: 100%;
+    width: 85%;
     margin: 0 auto;
+}
+
+.section1{
+    height: 100vh;
 }
 
 .section1 a {
@@ -46,6 +49,8 @@ p {
     color: #222222;
   
 }
+
+
 
 #navLinks {
     display: flex;
@@ -64,6 +69,14 @@ p {
     font-weight: 600;
     word-spacing: 10px;
     color: #222222;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
+    -webkit-transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
+    -moz-transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
+    -ms-transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
+    -o-transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
+}
+#navLinks li a:hover{
+    color: grey;
 }
 
 .section1 nav .logo {
@@ -74,6 +87,8 @@ p {
     align-items: center;
     gap: 10px;
     color: #222222;
+    text-decoration: none;
+    outline: none;
 }
 .section1 nav .logo i{
     rotate: 45deg;
@@ -144,7 +159,7 @@ p {
     width: 66%;
     font-weight: normal;
     margin-top: 2vw;
-    margin-bottom: 1.5vw;
+    margin-bottom: 1.6vw;
 }
 
 #hero .left .heroBtn{
@@ -177,4 +192,45 @@ p {
     width: 80%;
     object-fit: cover;
     object-position: center;
+}
+
+.section2 .brand-logos_container{
+  padding-bottom: 8.5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section2 .brand-logos_container img{
+    filter: grayscale();
+    -webkit-filter: grayscale();
+}
+
+.section3{
+    height: 100vh;
+}
+
+.section3 .service{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 2rem;
+}
+
+.section3 .service h1{
+    font-size: 2.2rem;
+    background-color: #b9ff66;
+    padding: 2.5px 5px;
+    font-weight: 500;
+    white-space: 0.05rem;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.section3 .service p{
+    width: 55%;
+    font-size: 1.3rem;
 }
