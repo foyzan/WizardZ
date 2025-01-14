@@ -131,7 +131,9 @@ function service(){
     scrollTrigger:{
       trigger: ".section2",
       scroll: "body",
-      start: "top 50%"
+      start: "top 50%",
+      end: "top 30%",
+      scrub: 3,
     }
   });
   
@@ -146,7 +148,42 @@ function service(){
   })
 }
 
+let gtl = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".section3",
+    scroll: "body",
+    start: "top 52%",
+    end: "top 0",
+    scrub:2
+  }
+})
+
+function section3(){
+  gtl.from(".cardContainer .card.line1.left", {
+    x: -300,
+    duration: 0.6,
+    opacity: 0,
+  }, "line1")
+  gtl.from(".cardContainer .card.line1.right", {
+    x: 300,
+    duration: 0.6,
+    opacity: 0,
+  }, "line1")
+  gtl.from(".cardContainer .card.line2.left", {
+    x: -300,
+    duration: 0.6,
+    opacity: 0,
+  }, "line2")
+  gtl.from(".cardContainer .card.line2.right", {
+    x: 300,
+    duration: 0.6,
+    opacity: 0,
+  }, "line2")  
+}
+
 section1()
 section2()
 service()
+section3()
+
 
