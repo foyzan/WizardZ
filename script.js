@@ -132,8 +132,6 @@ function service(){
       trigger: ".section2",
       scroll: "body",
       start: "top 50%",
-      end: "top 30%",
-      scrub: 3,
     }
   });
   
@@ -152,7 +150,7 @@ let gtl = gsap.timeline({
   scrollTrigger: {
     trigger: ".section3",
     scroll: "body",
-    start: "top 52%",
+    start: "top 51%",
     end: "top 0",
     scrub:2
   }
@@ -163,11 +161,13 @@ function section3(){
     x: -300,
     duration: 0.6,
     opacity: 0,
+    delay:0.2
   }, "line1")
   gtl.from(".cardContainer .card.line1.right", {
     x: 300,
     duration: 0.6,
     opacity: 0,
+    delay:0.2
   }, "line1")
   gtl.from(".cardContainer .card.line2.left", {
     x: -300,
