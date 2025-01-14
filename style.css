@@ -26,13 +26,13 @@ p {
     font-size: 20px;
 }
 
-section{
+section {
     background-color: white;
     width: 85%;
     margin: 0 auto;
 }
 
-.section1{
+.section1 {
     height: 100vh;
 }
 
@@ -47,7 +47,7 @@ section{
     align-items: center;
     padding: 40px 0px;
     color: #222222;
-  
+
 }
 
 
@@ -63,6 +63,7 @@ section{
 #navLinks li {
     list-style: none;
 }
+
 #navLinks li a {
     font-size: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -75,7 +76,8 @@ section{
     -ms-transition: color cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
     -o-transition: color cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
 }
-#navLinks li a:hover{
+
+#navLinks li a:hover {
     color: grey;
 }
 
@@ -90,17 +92,20 @@ section{
     text-decoration: none;
     outline: none;
 }
-.section1 nav .logo i{
+
+.section1 nav .logo i {
     rotate: 45deg;
     font-size: 50px;
 }
-#navleft{
+
+#navleft {
     display: flex;
     justify-content: center;
     align-self: center;
     gap: 50px;
 }
-#navBtn{
+
+#navBtn {
     display: flex;
     justify-content: center;
     align-self: center;
@@ -124,37 +129,38 @@ section{
     -o-transition: scale cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
 }
 
-#navBtn:hover{
+#navBtn:hover {
     scale: 1.02;
 }
 
-#hero{
+#hero {
     display: flex;
     width: 100%;
-    padding-top:2vw;
+    padding-top: 2vw;
 }
 
-#hero .left{
+#hero .left {
     width: 50%;
     height: 100%;
-   
+
 }
 
-#hero .right{
+#hero .right {
     width: 50%;
     height: 100%;
     display: flex;
     justify-content: flex-end;
-    
+
 }
 
-#hero .left h1{
+#hero .left h1 {
     font-size: 60px;
     width: 80%;
     font-weight: 500;
-   
+
 }
-#hero .left h4{
+
+#hero .left h4 {
     font-size: 18px;
     width: 66%;
     font-weight: normal;
@@ -162,7 +168,8 @@ section{
     margin-bottom: 1.6vw;
 }
 
-#hero .left .heroBtn, .proposal .btn{
+#hero .left .heroBtn,
+.proposal .btn {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 15px 30px;
     font-size: 18px;
@@ -183,35 +190,68 @@ section{
     -o-transition: color cubic-bezier(0.215, 0.610, 0.355, 1) 0.2s, background-color cubic-bezier(0.215, 0.610, 0.355, 1) 0.2s;
 }
 
-#hero .left .heroBtn:hover,.proposal .btn:hover{
+#hero .left .heroBtn:hover,
+.proposal .btn:hover {
     color: #222222;
     background-color: #b9ff66;
 }
 
-#hero .right img{
+#hero .right img {
     width: 80%;
     object-fit: cover;
     object-position: center;
 }
 
-.section2 .brand-logos_container{
-  padding-bottom: 3.5vw;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.section2 .brand-logos_container {
+    padding-bottom: 3.5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.section2 .brand-logos_container img{
+.section2 .brand-logos_container img {
     filter: grayscale();
     -webkit-filter: grayscale();
 }
 
-.section3{
+.services-ticker-block {
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.stb_line_single {
+    position: relative;
+    white-space: nowrap;
+    padding: 0;
+    will-change: transform;
+}
+
+.stb-item {
+    padding: 0;
+    font-size: 6.4rem;
+    display: inline-block;
+    margin-right: 10rem;
+
+}
+
+.stb-item:hover {
+    color: #C02534;
+}
+
+.stb-item img {
+    width: 100px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    display: inline-block;
+    margin-right: 10rem;
+}
+.section3 {
     min-height: 100vh;
     padding: 2vw 0;
 }
 
-.service{
+.service {
     display: flex;
     justify-content: start;
     align-items: center;
@@ -219,7 +259,7 @@ section{
     margin-top: 2.6vw;
 }
 
-.service h1{
+.service h1 {
     font-size: 2.2rem;
     background-color: #b9ff66;
     padding: 2.5px 5px;
@@ -231,12 +271,12 @@ section{
     -o-border-radius: 10px;
 }
 
-.service p{
+.service p {
     width: 55%;
     font-size: 1.3rem;
 }
 
-.section3 .cardContainer{
+.section3 .cardContainer {
     height: inherit;
     display: grid;
     justify-content: space-between;
@@ -246,7 +286,7 @@ section{
     padding: 4rem 0;
 }
 
-.section3 .cardContainer .card{
+.section3 .cardContainer .card {
     width: 100%;
     height: 100%;
     padding: 3rem;
@@ -260,29 +300,33 @@ section{
     -o-border-radius: 3rem;
 }
 
-.section3 .cardContainer .card:nth-child(1), .section3 .cardContainer .card:nth-child(4){
+.section3 .cardContainer .card:nth-child(1),
+.section3 .cardContainer .card:nth-child(4) {
     box-shadow: 0px 0.5rem 0px #222222;
     height: calc(100% - 0.5rem);
 }
 
-.section3 .cardContainer .card:nth-child(2), .section3 .cardContainer .card:nth-child(3){
+.section3 .cardContainer .card:nth-child(2),
+.section3 .cardContainer .card:nth-child(3) {
     background-color: #222222;
     color: white;
 }
 
 
-.section3 .card .cardLeft{
+.section3 .card .cardLeft {
     width: 50%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.section3 .card .cardLeft h2{
+
+.section3 .card .cardLeft h2 {
     font-size: 1.8rem;
     font-weight: 500;
 }
-.section3 .card .cardLeft h2 > span{
+
+.section3 .card .cardLeft h2>span {
     background-color: #b9ff66;
     padding: 2.5px 5px;
     font-weight: 500;
@@ -291,14 +335,15 @@ section{
     display: inline-block;
 }
 
-.section3 .card .cardLeft h4{
+.section3 .card .cardLeft h4 {
     font-size: 1.1rem;
     font-weight: 400;
     display: flex;
     gap: 1rem;
     align-items: center;
 }
-.section3 .card .cardLeft h4 > i{
+
+.section3 .card .cardLeft h4>i {
     font-size: 2.2rem;
     font-weight: 300;
     rotate: 15deg;
@@ -311,11 +356,13 @@ section{
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
 }
-.section3 .card .cardRight{
+
+.section3 .card .cardRight {
     width: 50%;
     padding: 1rem;
 }
-.section3 .card .cardRight img{
+
+.section3 .card .cardRight img {
     width: 100%;
     object-fit: cover;
     object-position: center;
@@ -323,11 +370,12 @@ section{
 
 
 
-.section4{
+.section4 {
     padding: 2vw 0;
 }
 
-.section4 .proposal, .section5 .cardContainer{
+.section4 .proposal,
+.section5 .cardContainer {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -341,24 +389,27 @@ section{
     -o-border-radius: 30px;
 }
 
-.section4 .proposal .proposalLeft{
+.section4 .proposal .proposalLeft {
     width: 40%;
 
 }
-.proposal .proposalLeft h2{
+
+.proposal .proposalLeft h2 {
     font-size: 1.8rem;
     margin-bottom: 1.5rem;
 }
-.proposal .proposalLeft p{
+
+.proposal .proposalLeft p {
     font-size: 1rem;
     margin-bottom: 1.8rem;
 }
-.section4 .proposal .proposalRight{
+
+.section4 .proposal .proposalRight {
     width: 40%;
     background-color: aqua;
 }
 
-.proposal .proposalRight img{
+.proposal .proposalRight img {
     width: 300px;
     position: absolute;
     top: -4%;
@@ -367,36 +418,40 @@ section{
 
 
 
-#caseStudies{
-   margin: 5.5vw 0 2vw 0;
+#caseStudies {
+    margin: 5.5vw 0 2vw 0;
 }
-.section5{
+
+.section5 {
     padding: 4vw 0 6vw 0;
 }
-.section5 .cardContainer{
+
+.section5 .cardContainer {
     background-color: #222222;
     color: #f3f3f3;
 }
-.section5 .cardContainer div:nth-child(2){
+
+.section5 .cardContainer div:nth-child(2) {
     border-left: 1px solid white;
     border-right: 1px solid white;
 }
-.section5 .cardContainer div{
+
+.section5 .cardContainer div {
     padding: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
-    
+
 }
 
-.section5 .cardContainer div p{
+.section5 .cardContainer div p {
     width: 80%;
     font-size: 1.1rem;
     font-weight: 400;
 }
 
-.section5 .cardContainer div h4{
+.section5 .cardContainer div h4 {
     color: #b9ff66;
     display: flex;
     align-items: center;
@@ -406,7 +461,8 @@ section{
     font-weight: 400;
     height: fit-content;
 }
-.section5 .cardContainer div h4 i{
+
+.section5 .cardContainer div h4 i {
     font-size: 2rem;
     rotate: 15deg;
     border-radius: 50%;
